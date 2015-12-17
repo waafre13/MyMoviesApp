@@ -6,7 +6,7 @@
 
         $routeProvider
             .when("/", {
-                templateUrl: "Pages/main.html",
+                templateUrl: "Pages/mainPage.html",
                 controller: "MainController"
             });
 
