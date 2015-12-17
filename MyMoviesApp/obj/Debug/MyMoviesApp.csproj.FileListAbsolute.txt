@@ -12,3 +12,17 @@ C:\Users\hansipod\Documents\Visual Studio 2013\Projects\MyMoviesApp\MyMoviesApp\
 C:\Users\hansipod\Documents\Visual Studio 2013\Projects\MyMoviesApp\MyMoviesApp\obj\Debug\MyMoviesApp.csprojResolveAssemblyReference.cache
 C:\Users\hansipod\Documents\Visual Studio 2013\Projects\MyMoviesApp\MyMoviesApp\obj\Debug\MyMoviesApp.dll
 C:\Users\hansipod\Documents\Visual Studio 2013\Projects\MyMoviesApp\MyMoviesApp\obj\Debug\MyMoviesApp.pdb
+C:\Users\Kristin\Documents\GitHub\MyMoviesApp\MyMoviesApp\bin\MyMoviesApp.dll.config
+C:\Users\Kristin\Documents\GitHub\MyMoviesApp\MyMoviesApp\bin\MyMoviesApp.dll
+C:\Users\Kristin\Documents\GitHub\MyMoviesApp\MyMoviesApp\bin\MyMoviesApp.pdb
+C:\Users\Kristin\Documents\GitHub\MyMoviesApp\MyMoviesApp\bin\Newtonsoft.Json.dll
+C:\Users\Kristin\Documents\GitHub\MyMoviesApp\MyMoviesApp\bin\System.Net.Http.Formatting.dll
+C:\Users\Kristin\Documents\GitHub\MyMoviesApp\MyMoviesApp\bin\System.Web.Http.dll
+C:\Users\Kristin\Documents\GitHub\MyMoviesApp\MyMoviesApp\bin\System.Web.Http.WebHost.dll
+C:\Users\Kristin\Documents\GitHub\MyMoviesApp\MyMoviesApp\bin\Newtonsoft.Json.xml
+C:\Users\Kristin\Documents\GitHub\MyMoviesApp\MyMoviesApp\bin\System.Net.Http.Formatting.xml
+C:\Users\Kristin\Documents\GitHub\MyMoviesApp\MyMoviesApp\bin\System.Web.Http.xml
+C:\Users\Kristin\Documents\GitHub\MyMoviesApp\MyMoviesApp\bin\System.Web.Http.WebHost.xml
+C:\Users\Kristin\Documents\GitHub\MyMoviesApp\MyMoviesApp\obj\Debug\MyMoviesApp.csprojResolveAssemblyReference.cache
+C:\Users\Kristin\Documents\GitHub\MyMoviesApp\MyMoviesApp\obj\Debug\MyMoviesApp.dll
+C:\Users\Kristin\Documents\GitHub\MyMoviesApp\MyMoviesApp\obj\Debug\MyMoviesApp.pdb

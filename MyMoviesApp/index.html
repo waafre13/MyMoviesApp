@@ -2,7 +2,7 @@
 <html ng-app="MyMoviesApp" lang="nb" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>My Movies App</title>
-    <link href="Scripts/bootstrap-3.3.6-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="Scripts/bootstrap-3.3.6-dist/css/bootstrap.min.css"/>
     
     <script src="Scripts/jquery-1.11.3.min.js"></script>
     <script src="Scripts/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
@@ -12,12 +12,19 @@
 </head>
 <body>
     
-<header>
+<header class="page-header">
     <h1>My Movies App</h1>
     <!--TODO: Header menu bootstrap style-->
+
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="/#/">Home</a></li>
+        <li role="presentation"><a href="/#/viewAllMovies">Show All Movies</a></li>
+        <li role="presentation"><a href="/#/manageMovies">Manage Movie</a></li>
+    </ul>
+
 </header>
 
-    <div ng-view></div>
+    <div ng-view class="col-xs-12"></div>
 
 <footer>
     <!--TODO: Footer-->
