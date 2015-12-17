@@ -74,6 +74,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="Pages\main.html" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\App\app.js" />
@@ -86,6 +87,7 @@
     <Content Include="Scripts\bootstrap-3.3.6-dist\js\bootstrap.min.js" />
     <Content Include="Scripts\bootstrap-3.3.6-dist\js\npm.js" />
     <Content Include="Scripts\jquery-1.11.3.min.js" />
+    <Content Include="Scripts\test.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

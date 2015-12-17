@@ -1,19 +1,26 @@
 ﻿
 (function() {
+    var myMoviesApp = angular.module("MyMoviesApp", ["ngRoute"]);
 
-    var myMoviesApp = angular.module("MyMoviesApp", []);
+    myMoviesApp.config(function($routeProvider) {
 
-    myMoviesApp.controller("MainController", [
-        "$http", "$scope", function($http, $scope) {
-            alert("ALERT!");
-            $scope.test = "Fredric";
+        $routeProvider
+            .when("/", {
+                templateUrl: "Pages/main.html",
+                controller: "MainController"
+            });
 
-            //API Urls
+    });
 
-            //
 
-        }
-    ]);
+    myMoviesApp.controller("MainController", ["$scope", function ($scope) {
 
+        $scope.test = "Fredric";
+
+        //API Urls
+
+        //
+
+    }]);
 
 }());
