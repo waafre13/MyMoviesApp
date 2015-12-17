@@ -17,6 +17,10 @@
                 templateUrl: "Pages/manageMovies.html",
                 controller: "MainController"
             })
+            .when("/createNewMovie", {
+                templateUrl: "Pages/createNewMovie.html",
+                controller: "MainController"
+            })
         ;
 
     });
