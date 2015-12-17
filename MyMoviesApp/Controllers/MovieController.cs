@@ -16,14 +16,48 @@ namespace MyMoviesApp.Controllers
         [HttpGet]
         public IEnumerable<XElement> GetAllMovies()
         {
-            XElement xmlFile = GetXmlFile();
+            try
+            {
+                XElement xmlFile = GetXmlFile();
 
-            var movieList = from movies in xmlFile.Descendants("movie")
-                           select movies;
+                var movieList = from movies in xmlFile.Descendants("movie")
+                    select movies;
 
-            return movieList;
+                return movieList;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            
         }
+        
         // Get movie
+        [HttpGet]
+        public Movie GetMovie(int id)
+        {
+
+            try
+            {
+                XElement xmlFile = GetXmlFile();
+
+                Movie selMovie = new Movie();
+                var movieObj = (from movie in xmlFile.Descendants("movie")
+                            where (int)movie.Element("id") == id
+                                select movie).SingleOrDefault();
+
+                selMovie.Id = (int)movieObj.Element("Id");
+                
+
+                return selMovie;
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+        }
+
         // Update movie
         // Add New Movie
         // Delete Movie
