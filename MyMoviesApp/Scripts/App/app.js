@@ -8,7 +8,20 @@
             .when("/", {
                 templateUrl: "Pages/mainPage.html",
                 controller: "MainController"
-            });
+            })
+            .when("/viewAllMovies", {
+                templateUrl: "Pages/viewAllMovies.html",
+                controller: "MainController"
+            })
+            .when("/manageMovies", {
+                templateUrl: "Pages/manageMovies.html",
+                controller: "MainController"
+            })
+            .when("/createNewMovie", {
+                templateUrl: "Pages/createNewMovie.html",
+                controller: "MainController"
+            })
+        ;
 
     });
 
