@@ -7,5 +7,6 @@ namespace MyMoviesApp.Models
 {
     public class Movie
     {
+
     }
 }

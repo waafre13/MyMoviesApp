@@ -13,9 +13,9 @@
     });
 
 
-    myMoviesApp.controller("MainController", ["$scope", function ($scope) {
+    myMoviesApp.controller("MainController", ["$scope", "MoviesFactory", function ($scope, MoviesFactory) {
 
-        $scope.test = "Fredric";
+        $scope.test = MoviesFactory.getAllMovies();
 
         //API Urls
 
@@ -26,6 +26,7 @@
     myMoviesApp.controller("MoviesController", ["$scope", function ($scope) {
 
         $scope.test = "Fredric";
+        con
 
 
     }]);
@@ -38,18 +39,31 @@
 
     }]);
 
-    myMoviesApp.factory("MoviesFactory", [
-        function() {
+    myMoviesApp.factory("MoviesFactory", [ "$http",
+        function($http) {
 
             //TODO: FACTORY: getMovies, getMovie(id)r object, updateMovie()
 
+
+
             return {
                 
-                getMovies: function() {
-                    return "hi";
+                getAllMovies: function() {
+                    $http.get("api/Movie/GetAllMovies")
+                        .success(function (data) {
+                            console.debug(data);
+                            return data;
+                        })
+                        .error(function (e) {
+                            console.error(e);
+                            $scope.error = e;
+                            return false;
+                        });
                 }
 
             };
+
+
         }
     ]);
 

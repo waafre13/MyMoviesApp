@@ -72,9 +72,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\moviesDB.xml" />
+    <Content Include="App_Data\reviewsDB.xml" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
-    <Content Include="Pages\main.html" />
+    <Content Include="Pages\createNewMovie.html" />
+    <Content Include="Pages\deleteMovie.html" />
+    <Content Include="Pages\mainPage.html" />
+    <Content Include="Pages\manageMovies.html" />
+    <Content Include="Pages\reviewMovie.html" />
+    <Content Include="Pages\updateMovie.html" />
+    <Content Include="Pages\viewAllMovies.html" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\App\app.js" />
@@ -88,13 +96,18 @@
     <Content Include="Scripts\bootstrap-3.3.6-dist\js\npm.js" />
     <Content Include="Scripts\jquery-1.11.3.min.js" />
     <Content Include="Scripts\test.js" />
+    <None Include="Scripts\_references.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\MovieController.cs" />
+    <Compile Include="Controllers\ReviewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Review.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -115,9 +128,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\" />
   </ItemGroup>
   <PropertyGroup>
